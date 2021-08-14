@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suthar's Gym</title>
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            padding: 0;
+            margin: 0;
+            background-image: url(/image/7.jpg);
+            box-sizing: border-box;
+        }
+
+        .left {
+            /* border: 2px solid teal; */
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .mid {
+            display: block;
+            /* border: 2px solid tomato; */
+            margin: 45px auto;
+            width: 50%;
+        }
+
+        .right {
+            /* border: 2px solid violet; */
+            position: absolute;
+            right: 20px;
+            top: 30px;
+            display: inline-block;
+        }
+
+        .left img {
+            width: 113px;
+            margin: 0px 8px;
+            padding: 0px 8px;
+            filter: invert(90%);
+        }
+
+        .left div {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 25px;
+            line-height: 19px;
+        }
+
+        .nav li {
+            display: inline-block;
+            font-size: 22px;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: white;
+            padding: 0px 25px;
+        }
+
+        .nav li a:hover,
+        .nav li a.active {
+            color: gray;
+            text-decoration: underline;
+        }
+
+        .btn {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+             font-size: 16px;
+            padding: 5px 8px;
+            background-color: black;
+             cursor: pointer;
+            margin: 10px 4px;
+            border-radius: 11px;
+            border: 2px solid gray;
+        }
+
+        .btn:hover {
+            background-color: rgb(58, 55, 55);
+        }
+
+        .container {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: 2px solid white;
+            width: 33%;
+            padding: 12px 20px;
+            margin: 100px 40px;
+            border-radius: 20px;
+            /* text-align: center; */
+        }
+
+        .formgroup input {
+
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 12px;
+            padding: 5px 5px;
+            width: 300px;
+            margin: 12px auto;
+            display: block;
+        }
+
+        .container h3 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .container button {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 300px;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <heading class="heading">
+        <div class="left">
+            <img src="/image/5.png" alt="">
+            <div>Suthar's Gym</div>
+        </div>
+
+        <div class="mid">
+            <ul class="nav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Calculate Fitness</a></li>
+                <li><a href="#">Know More</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Contact Us</button>
+            <button class="btn">E-mail Us</button>
+        </div>
+    </heading>
+    <div class="container">
+        <h3>Join the best gym in your city now</h3>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your city">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your phone number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
